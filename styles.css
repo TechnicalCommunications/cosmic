@@ -353,11 +353,6 @@ footer p {
         gap: 1rem;
     }
     
-    .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-    }
     
     .hero h2,
     .page-header h2 {
