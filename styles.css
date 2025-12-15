@@ -73,9 +73,8 @@ body {
 
 .nav-links a:hover,
 .nav-links a.active {
-  background: rgba(255, 215, 0, 0.2);
+    border-bottom: 2px solid #ffd700;
   color: #ffd700;
-  transform: translateY(-2px);
 }
 
 /* Hero Section */
