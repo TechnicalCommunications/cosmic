@@ -5,6 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Cosmic Communications</title>
     <link rel="stylesheet" href="styles.css">
+        <style>
+        /* Animation keyframes */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Apply animations to page elements */
+        .page-header h2 {
+            animation: fadeInDown 1s ease;
+        }
+
+        .page-header .subtitle {
+            animation: fadeInUp 1s ease 0.3s both;
+        }
+
+        .about-content {
+            animation: scaleIn 0.8s ease 0.6s both;
+        }
+
+        .focus-list li, .principles-list li, .purpose-list li, .application-list li {
+            animation: fadeInUp 0.6s ease backwards;
+        }
+
+        .focus-list li:nth-child(1) { animation-delay: 0.2s; }
+        .focus-list li:nth-child(2) { animation-delay: 0.3s; }
+        .focus-list li:nth-child(3) { animation-delay: 0.4s; }
+        .focus-list li:nth-child(4) { animation-delay: 0.5s; }
+
+        .principles-list li:nth-child(1) { animation-delay: 0.2s; }
+        .principles-list li:nth-child(2) { animation-delay: 0.3s; }
+        .principles-list li:nth-child(3) { animation-delay: 0.4s; }
+        .principles-list li:nth-child(4) { animation-delay: 0.5s; }
+        .principles-list li:nth-child(5) { animation-delay: 0.6s; }
+    </style>
 </head>
 <body>
     <nav class="navbar">
